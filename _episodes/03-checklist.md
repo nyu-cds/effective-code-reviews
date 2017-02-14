@@ -10,8 +10,11 @@ keypoints:
 - "There are about 15-20 common mistakes made by programmers."
 - "A checklist is a useful means of ensuring that common mistakes are identified."
 ---
-Research by the Software Engineering Institute suggests that programmers make 15-20 common mistakes. So by adding 
+Research by the Software Engineering Institute suggests that programmers make 15-20 common mistakes. By adding 
 such mistakes to a checklist, you can make sure that you spot them whenever they occur and help drive them out over time.
+
+The following is an example checklist of questions that can be asked during a code review. This should be considered
+a starting point for creating a checklist for your team.
 
 ## Code Review Checklist
 
@@ -25,7 +28,12 @@ such mistakes to a checklist, you can make sure that you spot them whenever they
 * Can any global variables be replaced?
 * Is there any commented out code?
 * Do loops have a set length and correct termination conditions?
-* Can any of the code be replaced with library functions?
+* Do the names used in the program convey intent?
+
+### Performance
+
+* Are there any obvious optimizations that will improve performance?
+* Can any of the code be replaced with library or built-in functions?
 * Can any logging or debugging code be removed?
 
 ### Security
@@ -44,7 +52,7 @@ such mistakes to a checklist, you can make sure that you spot them whenever they
 * Are data structures and units of measurement explained?
 * Is there any incomplete code? If so, should it be removed or flagged with a suitable marker like ‘TODO’?
 
-###Testing
+### Testing
 
 * Is the code testable? i.e. don’t add too many or hide dependencies, unable to initialize objects, test frameworks can use methods etc.
 * Do tests exist and are they comprehensive? i.e. has at least your agreed on code coverage.
