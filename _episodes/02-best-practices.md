@@ -3,10 +3,18 @@ title: "Code Review Best Practices"
 teaching: 5
 exercises: 0
 questions:
-- "What are some best practices for code reviews"
+- "What are some best practices for code reviews?
 objectives:
 - "Learn about effective practices for code reviews."
+- "Learn what makes reviews work better and what can cause problems."
+- "Learn what to look for when conducting a review."
+- "Learn what to do when your code is being reviewed."
 keypoints:
+- "An code review strategy is essential for effective reviews"
+- "Don't try to review too much code"
+- "A timely approach is better than rushing"
+- "Reviews are meant to be constructive"
+- "Make sure everyong is familiar and agrees on the ground rules"
 ---
 A successful strategy for code reviews requires balance between strictly documented processes and a 
 non-threatening, collaborative environment. Highly regimented reviews can stifle productivity, yet 
@@ -135,3 +143,5 @@ can associate your comments with a line of code very easily.
 
 If you're part of a team that does not conduct regular code reviews, suggest to the team leader that they consider code reviews in order to
 improve the quality of the code. 
+
+*Thanks to [SmartBear](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review) for content and images*

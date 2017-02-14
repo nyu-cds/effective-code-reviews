@@ -54,8 +54,7 @@ a starting point for creating a checklist for your team.
 
 ### Testing
 
-* Is the code testable? i.e. don’t add too many or hide dependencies, unable to initialize objects, test frameworks can use methods etc.
-* Do tests exist and are they comprehensive? i.e. has at least your agreed on code coverage.
+* Is the code testable? The code should be structured so that it doesn't add too many or hide dependencies, is unable to initialize objects, test frameworks can use methods etc.
+* Do tests exist, and are they comprehensive? 
 * Do unit tests actually test that the code is performing the intended functionality?
-* Are arrays checked for ‘out-of-bound’ errors?
 * Could any test code be replaced with the use of an existing API?
