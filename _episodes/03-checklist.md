@@ -1,6 +1,6 @@
 ---
 title: "Code Review Checklist"
-teaching: 5
+teaching: 10
 exercises: 0
 questions:
 - "What should I be looking for when reviewing code?"

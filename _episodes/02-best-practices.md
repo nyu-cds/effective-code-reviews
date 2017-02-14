@@ -1,9 +1,9 @@
 ---
 title: "Code Review Best Practices"
-teaching: 5
+teaching: 15
 exercises: 0
 questions:
-- "What are some best practices for code reviews?
+- "What are some best practices for code reviews?"
 objectives:
 - "Learn about effective practices for code reviews."
 - "Learn what makes reviews work better and what can cause problems."

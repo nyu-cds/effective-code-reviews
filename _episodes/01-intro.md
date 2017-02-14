@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Code Reviews"
-teaching: 5
+teaching: 10
 exercises: 0
 questions:
 - "Why do code reviews?"
