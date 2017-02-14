@@ -7,13 +7,46 @@ the overall quality and maintainability of the code. Code reviews
 (in contrast to [*code inspections*](http://www.methodsandtools.com/archive/archive.php?id=66)) 
 have been 
 repeatedly shown to accelerate and streamline the process of software development like few other practices can. 
+
 There are peer code review tools and software, but the concept itself is important to understand. Software is written by
 human beings. Software is therefore often riddled with mistakes. To err is, of course, human, so this
 is an obvious correlation. But what isn’t so obvious is why software developers often rely on manual or 
 automated testing to vet their code to the neglect of that other great gift of human nature: the ability 
 to see and correct mistakes ourselves. 
 
-Code reviews look for the following:
+This lesson aims to provide an introduction to code reviews, what to look for and how to conduct them.
+
+### Why do code reviews?
+
+Constructive code reviews are a means of ensuring the quality of code is consistent across the team – and typically all 
+code gets raised to a much higher standard as a result. 
+
+Through code reviews, team members can obtain feedback from their 
+peers on their contributions before merge, as well as learn from the feedback on other colleagues’ contributions. 
+
+Code review also promotes a shared understanding of the entire codebase amongst the team, making it easier for everyone to 
+contribute. Additionally it provides visibility of changes to the codebase to everyone, which helps to avoid errors, and 
+reduce wasteful or overly complicated code being added to the codebase.
+
+### When should code reviews happen?
+
+Code reviews should happen before any commit gets merged into a production codebase. Sometimes this principle needs to be 
+bypassed (e.g. an emergency fix for production when no reviewer is available) but such changes should be still be reviewed retrospectively.
+
+Ideally, code would undergo some kind of *continuous integration testing* prior to review. This is where a series of tests is run
+against the code to ensure that it is still functioning correctly after the change. The sophistication of such 
+testing can range from basic syntax checking up to full-scale test deployments. If it passes this automated checking, 
+then it’s worth spending human effort on a review.
+
+### Where do code reviews happen?
+
+Most social version control platforms (Github, Bitbucket, etc.) have the ability to do Pull Requests (or Merge Requests in Gitlab’s case). 
+This is the easiest (but not necessarily most robust) way to have them.
+
+Dedicated code review platforms such as Gerrit or Crucible may also be used – it doesn’t really matter what tool you use as long 
+as you are able to comment at the line level, at the general level, and provide some indicator of approval (e.g. a +1 or shipit)
+
+### What do code reviews look for?
 
 * Feature completion - making sure that the code meets the requirements
 * Potential side effects - seeing if the changed code causes any issues with other features
